@@ -5,6 +5,8 @@
  * greylt: 	#AFAFAF;
  * grey: 	#747474;
  * blue: 	#2470d3;
+ *
+ * Facebook Blue: 	#3b5998‎;
  */
 
 /**
@@ -22,6 +24,9 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Lato";
   font-weight: bold;
+}
+.center {
+	text-align: center;
 }
 img {
 	max-width: 100%;
@@ -60,13 +65,22 @@ img {
 }
 .navbar-default .navbar-nav > li > a:hover, 
 .navbar-default .navbar-nav > li > a:focus {
-	color: #2470d3;
+	background: #2470d3;
+	color: #fff;
 }
 @media (min-width: 768px){
 	.navbar-collapse {
 		background: #fff;
 		box-shadow: none;
 	}
+}
+.navbar-default li a.active {
+	background: #3c3c3c;
+	color: #fff;
+}
+.navbar-default li a.active:hover {
+	background: #3c3c3c;
+	color: #2470d3;
 }
 
 /**
