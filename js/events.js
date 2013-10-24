@@ -7,10 +7,10 @@ var fields = "&fields=picture.type(large),id,name,location,description";
 window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
-        appId: '508714812559221', // App ID from the app dashboard
-        channelUrl: 'http://api.jmps.in/test/fb/index.html', // Channel file for x-domain comms
-        status: true, // Check Facebook Login status
-        xfbml: true // Look for social plugins on the page
+        appId: '745718865455173', // App ID from the app dashboard
+        channelUrl: 'http://abaumer.github.io', // Channel file for x-domain comms
+        status: false, // Check Facebook Login status
+        xfbml: false // Look for social plugins on the page
     });
 
     FB.api('/825568655/accounts?access_token='+pageToken, function(response) {
@@ -21,6 +21,7 @@ window.fbAsyncInit = function() {
             for (var i = 0; i < response.data.length; i++) {
                 var fbe = response.data[i];
 
+                // Get info for CFC 242 Page Only
                 if (fbe.id === "330410753730567") {
                     var newToken = fbe.access_token;
 
