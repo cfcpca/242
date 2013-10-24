@@ -103,3 +103,10 @@ img {
 .media > .pull-left {
     max-width: 20%;
 }
+
+/**
+ * Thumbnails 
+ */
+.thumbnail {
+    margin-bottom: 30px;
+}
