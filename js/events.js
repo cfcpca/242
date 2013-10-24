@@ -47,7 +47,7 @@ window.fbAsyncInit = function() {
                                               "</a>"+
                                               "<div class='media-body'>"+
                                                 "<h4 class='media-heading'>" + fbe.name + "</h4>"+
-                                                "<p>" + fbe.description + " - <a href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>View " + fbe.name + " on Facebook</a></p>"+"
+                                                "<p>" + fbe.description + " - <a href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>View " + fbe.name + " on Facebook</a></p>"+
                                               "</div>"+
                                             "</div>";
 
