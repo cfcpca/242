@@ -41,15 +41,15 @@ window.fbAsyncInit = function() {
                                     "<a href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>View " + fbe.name + " on Facebook</a>" +
                                     "<p>" + fbe.description + "</p><hr/>";
 
-                                entry2 = "<div class='media'>
-                                              <a class='pull-left' href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>
-                                                <img class='media-object' src='" + fbe.picture.data.url + "' alt='" + fbe.name + "'>
-                                              </a>
-                                              <div class='media-body'>
-                                                <h4 class='media-heading'>" + fbe.name + "</h4>
-                                                <p>" + fbe.description + " - <a href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>View " + fbe.name + " on Facebook</a></p>
-                                              </div>
-                                            </div>";
+                                entry2 = "<div class='media'>"+
+                                              "<a class='pull-left' href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>"+
+                                                "<img class='media-object' src='" + fbe.picture.data.url + "' alt='" + fbe.name + "'>"+
+                                              "</a>"+
+                                              "<div class='media-body'>"+
+                                                "<h4 class='media-heading'>" + fbe.name + "</h4>"+
+                                                "<p>" + fbe.description + " - <a href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>View " + fbe.name + " on Facebook</a></p>"+"
+                                              "</div>"+
+                                            "</div>";
 
                                 $("#fb-events").append(entry2);
                             };
