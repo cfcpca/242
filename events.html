@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.png">
 
-    <title>VIDEOS 242 | College & Career @cfcpca</title>
+    <title>EVENTS 242 | College & Career @cfcpca</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -61,7 +61,8 @@
   </head>
 
   <body>
-
+    <div id="fb-root"></div>
+  
     <!-- Fixed navbar -->
     <div class="navbar navbar-default ">
       <div class="container">
@@ -77,8 +78,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="messages.html" class="active">Messages</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="messages.html" >Messages</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -90,10 +91,12 @@
       <div class="container">
 
         <div class="page-header">
-          <h1>Messages</h1>
+          <h1>Events</h1>
         </div>
 
-        <div id="msg-videos" class="row"></div>
+        <div class="row">
+          <div id="fb-events" class="col-sm-12"></div>
+        </div>
 
       </div> <!-- /container -->
     </div> <!-- /wrap -->
@@ -109,6 +112,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/messages.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/events.js"></script>
   </body>
 </html>
