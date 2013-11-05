@@ -15,20 +15,12 @@ window.fbAsyncInit = function() {
 
     FB.api('/330410753730567/events?access_token=' + pageToken + fields, function(response2) {
         if (response2) {
-            var entry;
-            console.log("got a response2");
-            console.log(response2);
+            var entry2;
 
             for (var i = 0; i < response2.data.length; i++) {
                 var fbe = response2.data[i],
                     date = moment(fbe.start_time).format("dddd, MMMM Do YYYY"),
                     time = moment(fbe.start_time).format("h:mm:ss a");
-
-                entry = "<h2>" + fbe.name + "</h2>" +
-                    "<img src='" + fbe.picture.data.url + "' />" +
-                    "<p><b>" + date + "</b> - " + fbe.location + "</p>" +
-                    "<a href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>View " + fbe.name + " on Facebook</a>" +
-                    "<p>" + fbe.description + "</p><hr/>";
 
                 entry2 = "<div class='media'>"+
                               "<a class='pull-left' href='https://www.facebook.com/events/" + fbe.id + "' title='View " + fbe.name + "' target='_blank'>"+

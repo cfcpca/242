@@ -1,8 +1,7 @@
 (function($){
 
 	function getVideos(success, error){
-	    var url = "http://vimeo.com/api/v2/channel/611476/videos.json",
-	        thevideos;
+	    var url = "http://vimeo.com/api/v2/channel/611476/videos.json";
 
 	    $.ajax({
 	        url: url,
@@ -12,7 +11,7 @@
 	        timeout: 10000
 	    });
 	}
-
+	
 	getVideos(function(data) {
 		var videoContent;
 	    for (var i=0; i < data.length; i++) {
